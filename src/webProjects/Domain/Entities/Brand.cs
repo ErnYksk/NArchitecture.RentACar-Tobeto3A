@@ -6,7 +6,7 @@ namespace Domain.Entities;
 
     public class Brand : BaseEntity<Guid>
     {
-        public string Name { get; set; }  //Audi 
+        public string Name { get; set; }  
 
 
         public ICollection<Model> Models { get; set; }
