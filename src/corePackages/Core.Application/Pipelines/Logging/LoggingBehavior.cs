@@ -16,7 +16,6 @@ public class LoggingBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, 
     {
         _loggerServiceBase = loggerServiceBase;
         _contextAccessor = contextAccessor;
-        _contextAccessor = contextAccessor;
     }
 
     public Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
